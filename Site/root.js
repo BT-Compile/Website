@@ -1,8 +1,10 @@
-function hover() {
-    document.getElementById('about').style.background = "white"
-    document.getElementById('about').style.color = "black"
-}
-
-function offhover() {
-    document.
-}
+function hover(id) {
+    document.getElementById(id).style.background = "white";
+    document.getElementById(id).style.color = "lightcoral";
+  }
+  
+  function offhover(id) {
+    document.getElementById(id).style.background = "";
+    document.getElementById(id).style.color = "";
+  }
+  
