@@ -56,17 +56,21 @@ h1 {
 .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     font-size: 75pt;
     font-family: 'Bebas Neue', cursive;
     color: white;
+    border-collapse: collapse;
 }
 
 .square {
-    width: 33%;
+    flex: 1 0 auto;
     height: 500px;
     background-color: lightcoral;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
 }

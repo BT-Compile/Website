@@ -6,6 +6,7 @@
     <title>test</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="root.css">
+    <script type="text/javascript" src="root.js"></script>
 </head>
 
 <body>
@@ -16,13 +17,13 @@
     </div>
 
     <div class="container">
-        <div class="square" onmouseover="" onclick="link();">
+        <div id="about" class="square" onmouseover="hover('about');" onmouseout="offhover();">
             <p>About</p>
         </div>
-        <div class="square">
+        <div id="contact" class="square">
             <p>Contact</p>
         </div>
-        <div class="square">
+        <div id="code" class="square">
             <p>Code</p>
         </div>
     </div>
