@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
 }
 
 /* Set the font size of the h1 element to be responsive using viewport units */
@@ -8,11 +10,26 @@ h1 {
     font-family: 'Bebas Neue', cursive;
 }
 
+h2 {
+    font-size: 24pt;
+    font-family: 'Bebas Neue', cursive;
+}
+
 /* Reset the border, margin, and padding for all elements to full fit in screen*/
 * {
     border: none;
     margin: 0;
     padding: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #003C28;
+    color: #ffffff;
+    text-align: right;
 }
 
 /* Set the width and height of elements with the IDs 'code', 'about', and 'contact' to be responsive using percentages and viewport height units*/
@@ -24,13 +41,42 @@ h1 {
     border: 1px;
 }
 
+#textAlpha {
+    float: left;
+    width: 50%;
+}
+
+#textBeta {
+    float: right;
+    width: 50%;
+    margin: 20px 0 20px 0;
+}
+
+#Ben {
+    border-radius: 50%;
+    float: right;
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+
+#USN {
+    margin-top: 5vh;
+    border-radius: 50%;
+    float: left;
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    clear: both;
+}
+
 /* Set the height of elements with the class 'banner' to be responsive using viewport height units, and add a background image, center it, and add text alignment and scrolling if necessary */
 .banner {
     height: 40vh;
     background-image: url(banner.jpg);
     background-size: cover;
     text-align: center;
-    overflow-y: auto;
+    overflow: auto;
 }
 
 /* Set the background image of elements with the class 'hero-image', position and center it to be responsive */
@@ -80,7 +126,6 @@ h1 {
 }
 
 .containerText {
-    padding-top: 5vh;
-    margin: 0 20% 150px 20%;
-    font-family: Arial, Helvetica, sans-serif
+    margin: 5vh 20% 5vh 20%;
+    clear: both;
 }
