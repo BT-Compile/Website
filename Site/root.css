@@ -1,144 +1,310 @@
 @font-face {
-    font-family: 'Bebas Neue', 'Roboto Condensed';
-    src: url('BebasNeue-Regular.ttf');
-    src: url('RobotoCondensed-Regular.ttf');
-    font-display: swap;
+  font-family: 'Bebas Neue', 'Roboto Condensed';
+  src: url('BebasNeue-Regular.ttf');
+  src: url('RobotoCondensed-Regular.ttf');
+  font-display: swap;
 }
 
 body {
-    margin: 0;
-    line-height: 1.8;
-    background-color: #282C34;
-    color: white;
-    font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  line-height: 1.8;
+  background-color: #282C34;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* Set the font size of the h1 element to be responsive using viewport units */
 h1 {
-    font-size: 10vw;
-    font-family: 'Bebas Neue', cursive;
+  font-size: 10vw;
+  font-family: 'Bebas Neue', cursive;
 }
 
 h2 {
-    font-size: 24pt;
-    font-family: 'Bebas Neue', cursive;
-    color: gold;
+  font-size: 24pt;
+  font-family: 'Bebas Neue', cursive;
+  color: gold;
 }
 
 /* Reset the border, margin, and padding for all elements to full fit in screen*/
 * {
-    border: none;
-    margin: 0;
-    padding: 0;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Set the width and height of elements with the IDs 'code', 'about', and 'contact' to be responsive using percentages and viewport height units*/
 #code,
 #about,
 #contact {
-    width: 33.33%;
-    height: 15vh;
-    border: 1px;
+  width: 33.33%;
+  height: 15vh;
+  border: 1px;
 }
 
 /* Set the height of elements with the class 'banner' to be responsive using viewport height units, and add a background image, center it, and add text alignment and scrolling if necessary */
 .banner {
-    height: 40vh;
-    background-image: url(banner.jpg);
-    background-size: cover;
-    text-align: center;
-    overflow-y: auto;
+  height: 40vh;
+  background-image: url(banner.jpg);
+  background-size: cover;
+  text-align: center;
+  overflow-y: auto;
 }
 
 /* Set the background image of elements with the class 'hero-image', position and center it to be responsive */
 .hero-image {
-    background-image: url("banner.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-attachment: fixed;
+  background-image: url("banner.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
 }
 
 /* Set the text alignment and position of elements with the class 'bannertext' to be centered and slightly offset from the top */
 .bannertext {
-    text-align: center;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 /* Set the font size and font family of elements with the class 'container' to be responsive using viewport units */
 .containerBanner {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    font-size: 5vw;
-    font-family: 'Bebas Neue', cursive;
-    color: white;
-    border-collapse: collapse;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 5vw;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  border-collapse: collapse;
 }
 
 /* Set the flex properties, height, background color, and text alignment of elements with the class 'square' to be responsive, and add padding, box sizing, and a cursor pointer */
 .square {
-    flex: 1 0 auto;
-    height: 100%;
-    background-color: #202124;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2vw;
-    box-sizing: border-box;
-    cursor: pointer;
+  flex: 1 0 auto;
+  height: 100%;
+  background-color: #202124;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2vw;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .containerText {
-    padding-top: 5vh;
-    margin: 0 20% 150px 20%;
+  padding-top: 5vh;
+  margin: 0 20% 150px 20%;
 }
 
-.slider {
-    width: 100%;
-    height: 510px;
-    position: relative;
-  }
-  
-  .slider img {
-    width: 100%;
-    height: 500px;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .slider img:first-child {
-    z-index: 1;
-  }
-  
-  .slider img:nth-child(2) {
-    z-index: 0;
-  }
+/*GLOBALS*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-  .navigation-button {
-    text-align: center;
-    position: relative;
-  }
-  
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  
-  .active,
-  .dot:hover {
-    background-color: #717171;
-  }
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+a:hover {
+  color: #1bc1a3;
+}
+
+body,
+hmtl {
+  background: #ecf0f1;
+  font-family: 'Anton', sans-serif;
+}
+
+#wrapper {
+  width: 600px;
+  margin: 50px auto;
+  height: 400px;
+  position: relative;
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
+}
+
+#slider-wrap {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+#slider-wrap ul#slider {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#slider-wrap ul#slider li {
+  float: left;
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+
+#slider-wrap ul#slider li>div {
+  position: absolute;
+  top: 20px;
+  left: 35px;
+}
+
+#slider-wrap ul#slider li>div h3 {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+#slider-wrap ul#slider li>div span {
+  font-family: Neucha, Arial, sans serif;
+  font-size: 21px;
+}
+
+#slider-wrap ul#slider li i {
+  text-align: center;
+  line-height: 400px;
+  display: block;
+  width: 100%;
+  font-size: 90px;
+}
+
+
+/*btns*/
+.btns {
+  position: absolute;
+  width: 50px;
+  height: 60px;
+  top: 50%;
+  margin-top: -25px;
+  line-height: 57px;
+  text-align: center;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 100;
+
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.btns:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#next {
+  right: -50px;
+  border-radius: 7px 0px 0px 7px;
+}
+
+#previous {
+  left: -50px;
+  border-radius: 0px 7px 7px 7px;
+}
+
+#counter {
+  top: 30px;
+  right: 35px;
+  width: auto;
+  position: absolute;
+}
+
+#slider-wrap.active #next {
+  right: 0px;
+}
+
+#slider-wrap.active #previous {
+  left: 0px;
+}
+
+
+/*bar*/
+#pagination-wrap {
+  min-width: 20px;
+  margin-top: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 15px;
+  position: relative;
+  text-align: center;
+}
+
+#pagination-wrap ul {
+  width: 100%;
+}
+
+#pagination-wrap ul li {
+  margin: 0 4px;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.5;
+  position: relative;
+  top: 0;
+
+
+}
+
+#pagination-wrap ul li.active {
+  width: 12px;
+  height: 12px;
+  top: 3px;
+  opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 0px;
+}
+
+
+
+
+/*Header*/
+h1,
+h2 {
+  text-shadow: none;
+  text-align: center;
+}
+
+h1 {
+  color: #666;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+h2 {
+  color: #7f8c8d;
+  font-family: Neucha, Arial, sans serif;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+
+
+
+/*ANIMATION*/
+#slider-wrap ul,
+#pagination-wrap ul li {
+  -webkit-transition: all 0.3s cubic-bezier(1, .01, .32, 1);
+  -moz-transition: all 0.3s cubic-bezier(1, .01, .32, 1);
+  -o-transition: all 0.3s cubic-bezier(1, .01, .32, 1);
+  -ms-transition: all 0.3s cubic-bezier(1, .01, .32, 1);
+  transition: all 0.3s cubic-bezier(1, .01, .32, 1);
+}
