@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Code</title>
+    <title>BTCompile.io</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="root.css">
     <script type="text/javascript" src="root.js"></script>
@@ -31,45 +31,39 @@
     </div>
 
     <div class="containerText">
-        <h2>Purpose...</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae consectetur ante, eget vulputate augue.
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam pulvinar at
-            neque vitae tempor. Pellentesque quis vestibulum elit. Praesent ac tristique ante. Mauris finibus tortor
-            eget tellus aliquet dignissim. Sed porta enim ac nisl molestie luctus. Morbi aliquet mauris sit amet
-            condimentum gravida. Aliquam sollicitudin diam maximus eros porta aliquam. Curabitur aliquet mi et dui
-            eleifend tempor.
+        <h2>Programming Languages</h2>
 
-            Proin molestie et augue a aliquet. Nunc eleifend lacus vitae nunc pellentesque suscipit. Donec rutrum diam
-            vel nunc cursus, id lobortis dui dapibus. Fusce fermentum eros sapien, ut sollicitudin purus placerat eu.
-            Integer accumsan dui bibendum, ornare elit eget, gravida elit. Etiam lobortis sollicitudin massa non
-            maximus. Maecenas ultricies lectus at ornare feugiat. Aenean risus lacus, aliquet ac sagittis nec,
-            scelerisque vel tortor. Nullam in auctor orci. Praesent urna eros, placerat et sem eu, faucibus dictum nisi.
+        /* https://www.bannerbear.com/blog/how-to-create-an-image-slider-in-html-css-and-javascript/ */
 
-            Aliquam metus libero, ultrices a placerat ut, bibendum imperdiet libero. Aliquam convallis vitae est at
-            ultricies. Aenean blandit a felis nec ullamcorper. Aliquam eleifend est erat, ut dignissim nisl tempor ut.
-            Quisque ornare augue id luctus aliquam. Mauris lectus metus, convallis sed eleifend sed, condimentum luctus
-            ligula. Morbi cursus justo sed ligula facilisis, quis sodales risus porta. Sed pulvinar egestas orci, ac
-            scelerisque leo tempus ac. Proin egestas bibendum ornare. Proin ac ligula ultrices, hendrerit nulla vel,
-            sollicitudin turpis. Praesent venenatis enim lacus, et dignissim ante tincidunt ut. Cras ultrices neque
-            orci, et tincidunt est faucibus ac. Duis quis felis ac quam molestie scelerisque vitae nec nibh. Phasellus
-            congue massa et odio efficitur, id luctus odio luctus. Nulla quam enim, placerat quis molestie tincidunt,
-            eleifend quis mi. Suspendisse at auctor erat, sit amet malesuada lorem.
+        <div class="slider">
+            <img id="img-1" src="java.png" alt="Java" />
+            <img id="img-2" src="js.png" alt="JavaScript" />
+            <img id="img-3" src="HTML.png" alt="HTML/CSS" />
+            <img id="img-4" src="sql.png" alt="SQL" />
+            <img id="img-5" src="ruby.png" alt="Ruby" />
+        </div>
+        <div class="navigation-button">
+            <span class="dot active" onclick="changeSlide(0)"></span>
+            <span class="dot" onclick="changeSlide(1)"></span>
+            <span class="dot" onclick="changeSlide(2)"></span>
+            <span class="dot" onclick="changeSlide(3)"></span>
+            <span class="dot" onclick="changeSlide(4)"></span>
+            <span class="dot" onclick="changeSlide(5)"></span>
+        </div>
 
-            Ut a nisl metus. Maecenas justo tellus, venenatis at ipsum a, efficitur accumsan augue. Curabitur eu nunc ac
-            libero elementum molestie. Pellentesque efficitur ac elit ac eleifend. Vestibulum vestibulum sagittis felis
-            ut euismod. Suspendisse potenti. Phasellus posuere magna et metus ultricies sagittis. Nullam vel sapien at
-            massa auctor commodo ac sit amet felis. Aenean sapien ipsum, ullamcorper ultricies rhoncus vel, dignissim
-            nec lacus. Vestibulum eleifend purus eu lectus rhoncus sodales. Duis sit amet ultrices tellus. Integer
-            volutpat eros ac diam scelerisque iaculis ut id diam. Pellentesque bibendum varius enim a posuere. Vivamus
-            nec vestibulum ex.
 
-            Vestibulum gravida euismod iaculis. Nam molestie, dui id condimentum auctor, elit purus finibus metus, ac
-            convallis libero ex ac lectus. Integer nunc magna, scelerisque sed volutpat et, vehicula at purus. Curabitur
-            vel ligula et felis imperdiet iaculis. Fusce id est facilisis, tempus justo eu, lobortis metus. Praesent
-            ullamcorper, leo id condimentum interdum, odio velit cursus tellus, sed fringilla felis eros vel mi. Cras a
-            eleifend lacus, sed tristique sapien. Maecenas vulputate neque a laoreet lacinia.
-        </p>
+        <h2>Proficiencies</h2>
+
+        <div class="slider2">
+            <img id="img-1" src="img-1.jpg" alt="AWS" />
+            <img id="img-2" src="img-2.jpg" alt="REACT" />
+            <img id="img-3" src="img-3.jpg" alt="Azure" />
+        </div>
+        <div class="navigation-button">
+            <span class="dot active" onclick="changeSlide(0)"></span>
+            <span class="dot" onclick="changeSlide(1)"></span>
+            <span class="dot" onclick="changeSlide(2)"></span>
+        </div>
     </div>
 
     <footer>
