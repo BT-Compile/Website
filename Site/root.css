@@ -14,6 +14,13 @@ html, body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+footer {
+  height: 3%;
+  background-color: #202124;
+  text-align: right;
+  font-size: small;
+}
+
 /* This css is soley for the banner and its nav banner*/
 /* Set the font size of the h1 element to be responsive using viewport units */
 h1 {
@@ -22,6 +29,7 @@ h1 {
 }
 
 h2 {
+  text-align: center;
   font-size: 24pt;
   font-family: 'Bebas Neue', cursive;
   color: gold;
@@ -99,16 +107,13 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   margin: 0 20% 0 20%;
-  margin-bottom: 10vh;
   clear: both;
   height: 50%;
 }
 
 .containerText2 {
   margin: 0 20% 0 20%;
-  margin-top: 10vh;
 }
-
 
 #blockLeft {
   width: 45%;
@@ -120,10 +125,6 @@ h2 {
   width: 50%;
   height: 50%;
   float: right;
-}
-
-#blockRightTitle {
-  text-align: center;
 }
 
 /* This code defines the styling for a slideshow container that displays images */
