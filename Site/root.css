@@ -5,7 +5,8 @@
   font-display: swap;
 }
 
-body {
+html, body {
+  height: 100%;
   margin: 0;
   line-height: 1.8;
   background-color: #282C34;
@@ -13,6 +14,7 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+/* This css is soley for the banner and its nav banner*/
 /* Set the font size of the h1 element to be responsive using viewport units */
 h1 {
   font-size: 10vw;
@@ -25,24 +27,18 @@ h2 {
   color: gold;
 }
 
-/* Reset the border, margin, and padding for all elements to full fit in screen*/
-* {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
 /* Set the width and height of elements with the IDs 'code', 'about', and 'contact' to be responsive using percentages and viewport height units*/
 #code,
 #about,
 #contact {
   width: 33.33%;
   height: 15vh;
-  border: 1px;
+  border: 1vh;
 }
 
 /* Set the height of elements with the class 'banner' to be responsive using viewport height units, and add a background image, center it, and add text alignment and scrolling if necessary */
 .banner {
+  width: 100%;
   height: 40vh;
   background-image: url(banner.jpg);
   background-size: cover;
@@ -96,215 +92,119 @@ h2 {
   cursor: pointer;
 }
 
+/* this css is here to shape conatiners for the body*/
+/* shapes the first container in the body*/
 .containerText {
-  padding-top: 5vh;
-  margin: 0 20% 150px 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 20% 0 20%;
+  margin-bottom: 10vh;
+  clear: both;
+  height: 50%;
 }
 
-/*GLOBALS*/
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.containerText2 {
+  margin: 0 20% 0 20%;
+  margin-top: 10vh;
 }
 
-a {
-  text-decoration: none;
-  color: #666;
-}
 
-a:hover {
-  color: #1bc1a3;
-}
-
-body,
-hmtl {
-  background: #ecf0f1;
-  font-family: 'Anton', sans-serif;
-}
-
-#wrapper {
-  width: 600px;
-  margin: 50px auto;
-  height: 400px;
-  position: relative;
-  color: #fff;
-  text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 0px;
-}
-
-#slider-wrap {
-  width: 600px;
-  height: 400px;
-  position: relative;
-  overflow: hidden;
-}
-
-#slider-wrap ul#slider {
-  width: 100%;
-  height: 100%;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#slider-wrap ul#slider li {
+#blockLeft {
+  width: 45%;
+  height: 100vh;
   float: left;
-  position: relative;
-  width: 600px;
-  height: 400px;
 }
 
-#slider-wrap ul#slider li>div {
-  position: absolute;
-  top: 20px;
-  left: 35px;
+#blockRight {
+  width: 50%;
+  height: 50%;
+  float: right;
 }
 
-#slider-wrap ul#slider li>div h3 {
-  font-size: 36px;
-  text-transform: uppercase;
-}
-
-#slider-wrap ul#slider li>div span {
-  font-family: Neucha, Arial, sans serif;
-  font-size: 21px;
-}
-
-#slider-wrap ul#slider li i {
+#blockRightTitle {
   text-align: center;
-  line-height: 400px;
+}
+
+/* This code defines the styling for a slideshow container that displays images */
+/* Set the maximum width of the container to 800 pixels and position it relative to its parent element */
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Style the images within the container */
+.slideshow-container img {
+  display: none;
+  /* Hide all images by default */
+  max-width: 100%;
+  /* Set the maximum width of the images to 100% of the container */
+  height: auto;
+  /* Automatically adjust the height of the images */
+  margin: 0 auto;
+  /* Center the images horizontally within the container */
+}
+
+/* Display the first image in the slideshow */
+.slideshow-container img:first-child {
   display: block;
-  width: 100%;
-  font-size: 90px;
 }
 
-
-/*btns*/
-.btns {
+/* Style the previous and next buttons for navigating through the slideshow */
+.prev,
+.next {
   position: absolute;
-  width: 50px;
-  height: 60px;
+  /* Position the buttons absolutely within the container */
   top: 50%;
-  margin-top: -25px;
-  line-height: 57px;
-  text-align: center;
+  /* Vertically center the buttons */
+  transform: translateY(-50%);
+  /* Adjust the buttons to be centered properly */
+  font-size: 30px;
+  /* Set the font size of the buttons */
+  font-weight: bold;
+  /* Make the buttons bold */
+  padding: 10vh;
+  /* Add padding to the buttons */
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.1);
-  z-index: 100;
-
-
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -ms-user-select: none;
-
-  -webkit-transition: all 0.1s ease;
-  -moz-transition: all 0.1s ease;
-  -o-transition: all 0.1s ease;
-  -ms-transition: all 0.1s ease;
-  transition: all 0.1s ease;
+  /* Change the cursor to a pointer on hover */
+  color: gold;
+  /* Set the color of the buttons to gold */
 }
 
-.btns:hover {
-  background: rgba(0, 0, 0, 0.3);
+/* Position the next button to the right side of the container */
+.next {
+  right: 0;
 }
 
-#next {
-  right: -50px;
-  border-radius: 7px 0px 0px 7px;
-}
-
-#previous {
-  left: -50px;
-  border-radius: 0px 7px 7px 7px;
-}
-
-#counter {
-  top: 30px;
-  right: 35px;
-  width: auto;
-  position: absolute;
-}
-
-#slider-wrap.active #next {
-  right: 0px;
-}
-
-#slider-wrap.active #previous {
-  left: 0px;
-}
-
-
-/*bar*/
-#pagination-wrap {
-  min-width: 20px;
-  margin-top: 350px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 15px;
-  position: relative;
+/* Style the dot container for displaying the pagination dots */
+.dot-container {
   text-align: center;
+  /* Center the dot container */
+  margin-top: 10px;
+  /* Add some margin to the top of the dot container */
 }
 
-#pagination-wrap ul {
-  width: 100%;
-}
-
-#pagination-wrap ul li {
-  margin: 0 4px;
+/* Style the pagination dots */
+.dot {
   display: inline-block;
-  width: 5px;
-  height: 5px;
+  /* Display the dots inline */
+  width: 10px;
+  /* Set the width of the dots */
+  height: 10px;
+  /* Set the height of the dots */
   border-radius: 50%;
-  background: #fff;
-  opacity: 0.5;
-  position: relative;
-  top: 0;
-
-
+  /* Make the dots circular */
+  background-color: gray;
+  /* Set the background color of the dots */
+  margin: 0 5px;
+  /* Add some margin between the dots */
+  cursor: pointer;
+  /* Change the cursor to a pointer on hover */
 }
 
-#pagination-wrap ul li.active {
-  width: 12px;
-  height: 12px;
-  top: 3px;
-  opacity: 1;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 0px;
-}
-
-
-
-
-/*Header*/
-h1,
-h2 {
-  text-shadow: none;
-  text-align: center;
-}
-
-h1 {
-  color: #666;
-  text-transform: uppercase;
-  font-size: 36px;
-}
-
-h2 {
-  color: #7f8c8d;
-  font-family: Neucha, Arial, sans serif;
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-
-
-
-/*ANIMATION*/
-#slider-wrap ul,
-#pagination-wrap ul li {
-  -webkit-transition: all 0.3s cubic-bezier(1, .01, .32, 1);
-  -moz-transition: all 0.3s cubic-bezier(1, .01, .32, 1);
-  -o-transition: all 0.3s cubic-bezier(1, .01, .32, 1);
-  -ms-transition: all 0.3s cubic-bezier(1, .01, .32, 1);
-  transition: all 0.3s cubic-bezier(1, .01, .32, 1);
+/* Style the active pagination dot */
+.active-dot {
+  background-color: gold;
+  /* Set the background color of the active dot to gold */
 }

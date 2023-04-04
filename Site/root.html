@@ -34,85 +34,51 @@
         </div>
     </div>
 
-    
-
     <div class="containerText">
-        <h2>Programming Languages</h2>
-    
-
-        <h2>Proficiencies</h2>
-
-        <div class="slider2">
-            <img id="img-1" src="img-1.jpg" alt="AWS" />
-            <img id="img-2" src="img-2.jpg" alt="REACT" />
-            <img id="img-3" src="img-3.jpg" alt="Azure" />
+        <div id="blockLeft">
+            <h2>Hello!</h2>
+            <p>Welcome to my personal website! My name is Ben and I'm a software engineer. I'm excited to have you
+                here
+                and share my passion for technology with you. This website is a place for me to showcase my work,
+                share
+                my thoughts on software development, and connect with other like-minded individuals. As a software
+                engineer, I believe that technology has the power to change the world for the better, and
+                I'm committed to using my skills to make a positive impact. Whether you're a fellow software
+                engineer,
+                a firm checking out my work, or simply curious about what I do, I hope you find something here that
+                interests you. Thank you for visiting my site, and I look forward to getting to know you better!
+                As a software engineer, I believe in the power of technology to make a positive impact on the world,
+                and am committed to using my skills to contribute to this goal.</p>
         </div>
-        <div class="navigation-button">
-            <span class="dot active" onclick="changeSlide(0)"></span>
-            <span class="dot" onclick="changeSlide(1)"></span>
-            <span class="dot" onclick="changeSlide(2)"></span>
+
+        <div id="blockRight">
+            <h2 id="blockRightTitle">Proficiencies</h2>
+            <div id="skills">
+
+            </div>
         </div>
     </div>
 
-    <div id="wrapper">
-        <div id="slider-wrap">
-            <ul id="slider">
-                <li data-color="#1abc9c">
-                    <div>
-                        <h3>Slide #1</h3>
-                        <span>Sub-title #1</span>
-                    </div>
-                    <i class="fa fa-image"></i>
-                </li>
+    <div class="containerText2">
+        <h2>Programming Languages</h2>
+        <div class="slideshow-container">
+            <img src="java.png" alt="java">
+            <img src="js.png" alt="javascript">
+            <img src="HTML.png" alt="html">
+            <img src="css.png" alt="css">
+            <img src="sql.png" alt="SQL">
 
-                <li data-color="#3498db">
-                    <div>
-                        <h3>Slide #2</h3>
-                        <span>Sub-title #2</span>
-                    </div>
-                    <i class="fa fa-gears"></i>
-                </li>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-                <li data-color="#9b59b6">
-                    <div>
-                        <h3>Slide #3</h3>
-                        <span>Sub-title #3</span>
-                    </div>
-                    <i class="fa fa-sliders"></i>
-                </li>
-
-                <li data-color="#34495e">
-                    <div>
-                        <h3>Slide #4</h3>
-                        <span>Sub-title #4</span>
-                    </div>
-                    <i class="fa fa-code"></i>
-                </li>
-
-                <li data-color="#e74c3c">
-                    <div>
-                        <h3>Slide #5</h3>
-                        <span>Sub-title #5</span>
-                    </div>
-                    <i class="fa fa-microphone-slash"></i>
-                </li>
-
-
-            </ul>
-
-            <!--controls-->
-            <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
-            <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
-            <div id="counter"></div>
-
-            <div id="pagination-wrap">
-                <ul>
-                </ul>
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
             </div>
-            <!--controls-->
-
         </div>
-
     </div>
 
     <footer>
