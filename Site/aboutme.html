@@ -31,10 +31,8 @@
     </div>
 
     <div class="containerText">
-        <img id="Ben" src="headshot.jpg" alt="Picture of me being cute">
-        <div id="textAlpha">
+        <div id="blockLeft">
             <h2>About me...</h2>
-            <br>
             <p>
                 Hello! My name is Benjamin Trang (he/him) and I am a aspiring fullstack software engineer. I am currently a senior at James Madison
                 University and will be completing my Bachelors in Computer Information Systems in the winter. I am one of two, first generation
@@ -43,13 +41,18 @@
                 world using my code in this growing age of technology.
             </p>
         </div>
+
+        <div id="blockRight">
+            <img id="aboutimg" src="benface.jpg" alt="headshot">
+        </div>
     </div>
 
-    <div class="containerText">
-        <img id="USN" src="usn.jpg" alt="LAN photo">
-        <div id="textBeta">
+    <div class="containerText2">
+        <div id="blockleft">
+            <img id="USN" src="usn.jpg" alt="LAN photo">
+        </div>
+        <div id="blockRight">
             <h2>Esports...</h2>
-            <br>
             <p>
                 After completing my associates degree and completing my transfer, I took a two year hiatus. I wanted to pursue a
                 personal passion of mine, which was to play video games for money! As my family loves to remind me, I was born with the
@@ -62,6 +65,17 @@
             </p>
         </div>
     </div>
+
+    <footer>
+        <script type="text/javascript">
+
+            var update = new Date(document.lastModified)
+            var modMonth = update.getMonth() + 1
+            var modDate = update.getDate()
+            var modYear = update.getFullYear()
+            document.write("Trang - Last Updated: " + modMonth + "/" + modDate + "/" + modYear);
+        </script>
+    </footer>
 </body>
 
 </html>
