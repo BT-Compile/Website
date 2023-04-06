@@ -35,6 +35,8 @@ h2 {
     font-size: 24pt;
     font-family: 'Bebas Neue', cursive;
     color: gold;
+    text-decoration: underline;
+    text-underline-offset: 10px;
 }
 
 /* Set the width and height of elements with the IDs 'code', 'about', and 'contact' to be responsive using percentages and viewport height units*/

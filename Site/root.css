@@ -34,13 +34,13 @@ h2 {
   font-size: 24pt;
   font-family: 'Bebas Neue', cursive;
   color: gold;
+  text-decoration: underline;
+  text-underline-offset: 10px;
 }
 
 h3 {
   font-family: 'Bebas Neue', cursive;
   color: gold;
-  text-decoration: underline;
-  text-underline-offset: 10px;
 }
 
 /* Set the width and height of elements with the IDs 'code', 'about', and 'contact' to be responsive using percentages and viewport height units*/
@@ -221,6 +221,14 @@ h3 {
   /* Change the cursor to a pointer on hover */
   color: gold;
   /* Set the color of the buttons to gold */
+  user-select: none;
+  /* this removes the highlight double click */
+  -moz-user-select: none;
+  /* this removes it for firefox */ 
+  -webkit-user-select: none;
+  /* this removes it for chromium */ 
+  -ms-user-select: none;
+  /* this removes it for ms browsers */ 
 }
 
 /* Position the next button to the right side of the container */
