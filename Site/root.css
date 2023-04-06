@@ -19,7 +19,7 @@ body {
 footer {
   height: 3%;
   background-color: #202124;
-  text-align: right;
+  text-align: center;
   font-size: small;
 }
 
@@ -38,7 +38,9 @@ h2 {
 
 h3 {
   font-family: 'Bebas Neue', cursive;
+  color: gold;
   text-decoration: underline;
+  text-underline-offset: 10px;
 }
 
 /* Set the width and height of elements with the IDs 'code', 'about', and 'contact' to be responsive using percentages and viewport height units*/
@@ -122,8 +124,10 @@ h3 {
 }
 
 .containerText3 {
-  margin: 0 20% 15vh 20%;
+  margin: 10vh 20% 0 20%;
   height: 50vh;
+  text-align: center;
+  line-height: 1;
 }
 
 #blockLeft {
@@ -138,27 +142,30 @@ h3 {
   float: right;
 }
 
+#languagesTitle {
+  text-align: center;
+}
+
+#skillcontainer {
+  text-align: center;
+}
+
 #skills1 {
-  width: 25%;
+  width: 33.33%;
   height: auto;
   float: inline-start;
 }
 
 #skills2 {
-  width: 25%;
+  width: 33.33%;
   height: auto;
-  display: inline;
+  display: inline-block;
 }
 
 #skills3 {
-  width: 25%;
+  width: 33.33%;
   height: auto;
-  display: inline;
-}
-#skills4 {
-  width: 25%;
-  height: auto;
-  display: inline;
+  float: inline-end;
 }
 
 #introimage {
