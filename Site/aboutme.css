@@ -47,6 +47,11 @@ h2 {
     border: 1px;
 }
 
+#pagetitle {
+    color: gold;
+}
+
+
 /* Set the height of elements with the class 'banner' to be responsive using viewport height units, and add a background image, center it, and add text alignment and scrolling if necessary */
 .banner {
     width: 100%;
