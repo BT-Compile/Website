@@ -11,6 +11,7 @@ body {
   height: 100%;
   line-height: 1.8;
   background-color: #282C34;
+  margin: 0;
   color: white;
   font-family: 'Roboto Condensed', sans-serif;
 }
