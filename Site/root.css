@@ -43,8 +43,8 @@ h3 {
 }
 
 #wrapper {
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Set the width and height of elements with the IDs 'code', 'about', and 'contact' to be responsive using percentages and viewport height units*/
@@ -81,8 +81,9 @@ h3 {
 .bannertext {
   text-align: center;
   position: absolute;
-  top: 20%;
+  top: 5%;
   left: 50%;
+  height: 300px;
   transform: translate(-50%, -50%);
   color: white;
 }
@@ -249,11 +250,11 @@ h3 {
   user-select: none;
   /* this removes the highlight double click */
   -moz-user-select: none;
-  /* this removes it for firefox */ 
+  /* this removes it for firefox */
   -webkit-user-select: none;
-  /* this removes it for chromium */ 
+  /* this removes it for chromium */
   -ms-user-select: none;
-  /* this removes it for ms browsers */ 
+  /* this removes it for ms browsers */
 }
 
 /* Position the next button to the right side of the container */

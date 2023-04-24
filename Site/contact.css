@@ -20,13 +20,12 @@ footer {
     background-color: #202124;
     text-align: center;
     font-size: small;
-
 }
 
 /* This css is solely for the banner and its nav banner*/
 /* Set the font size of the h1 element to be responsive using viewport units */
 h1 {
-    font-size: 10vw;
+    font-size: 10em;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -36,6 +35,12 @@ h2 {
     color: gold;
     text-decoration: underline;
     text-underline-offset: 10px;
+    text-align: center;
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Set the width and height of elements with the IDs 'code', 'about', and 'contact' to be responsive using percentages and viewport height units*/
@@ -44,7 +49,7 @@ h2 {
 #contact {
     width: 33.33%;
     height: 15vh;
-    border: 1px;
+    border: 1vh;
 }
 
 /* Set the height of elements with the class 'banner' to be responsive using viewport height units, and add a background image, center it, and add text alignment and scrolling if necessary */
@@ -54,7 +59,7 @@ h2 {
     background-image: url(assets/banner.jpg);
     background-size: cover;
     text-align: center;
-    overflow: auto;
+    overflow-y: auto;
 }
 
 /* Set the background image of elements with the class 'hero-image', position and center it to be responsive */
@@ -104,7 +109,7 @@ h2 {
     cursor: pointer;
 }
 
-/* this css is here to shape and work on containers for the body*/
+/* this css is here to shape and work containers for the body*/
 /* shapes the first container in the body*/
 .containerText {
     display: flex;
@@ -114,66 +119,25 @@ h2 {
     height: auto;
 }
 
-.containerText2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: auto;
-    margin: 0 20% 0 20%;
-}
-
-.blockLeft {
-    width: 50%;
-    height: auto;
-    float: left;
-}
-
-.blockRight {
-    width: 50%;
-    height: auto;
-    float: right;
-}
-
-.finalpara {
-    margin: 0 20% 0% 20%;
-    height: auto;
-    text-align: center;
-}
-
-#aboutimg {
-    width: 400px;
-    height: 400px;
+#email {
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    float: right;
-    margin-right: 50px;
-    margin-top: 50px;
-    object-fit: cover;
+    float: inline-start;
+    margin: 15% 0 20% 0;
 }
 
-#USN {
-    margin-top: 12vh;
-    margin-left: 70px;
+#github {
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    float: left;
-    width: 400px;
-    height: 400px;
+    margin: 15% 0 20% 0;
 }
 
-#art {
-    width: 400px;
-    height: 400px;
+#linkedin {
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    float: right;
-    margin-right: 50px;
-    margin-top: 50px;
-}
-
-#wrapper {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#ty {
-    text-align: center;
-    color: gold;
+    float: inline-end;
+    margin: 15% 0 20% 0;
 }
