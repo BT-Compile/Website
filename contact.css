@@ -48,7 +48,6 @@ h2 {
 #code,
 #about,
 #contact {
-    display: flex;
     width: 33.33%;
     height: 15vh;
     border: 1vh;
@@ -60,8 +59,6 @@ h2 {
 
 /* Set the height of elements with the class 'banner' to be responsive using viewport height units, and add a background image, center it, and add text alignment and scrolling if necessary */
 .banner {
-    display: flex;
-    width: 100%;
     height: 40vh;
     background-image: url(assets/banner.jpg);
     background-size: cover;
@@ -76,13 +73,11 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: static;
-    background-attachment: fixed;
+    position: relative;
 }
 
 /* Set the text alignment and position of elements with the class 'bannertext' to be centered and slightly offset from the top */
 .bannertext {
-    flex: 1 0 auto;
     text-align: center;
     position: absolute;
     top: 5%;

@@ -61,7 +61,6 @@ h3 {
   color: gold;
 }
 
-
 /* Set the height of elements with the class 'banner' to be responsive using viewport height units, and add a background image, center it, and add text alignment and scrolling if necessary */
 .banner {
   height: 40vh;
@@ -79,7 +78,6 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-attachment: fixed;
 }
 
 /* Set the text alignment and position of elements with the class 'bannertext' to be centered and slightly offset from the top */
