@@ -10,72 +10,100 @@
 </head>
 
 <body>
-    <div class="banner">
-        <div class="bannertext">
-            <h1>Welcome</h1>
-        </div>
-    </div>
-
-    <div class="containerBanner">
-        <div id="code" class="square" onmouseover="hover('code');" onmouseout="offhover('code');" onclick="(window.location.href='root.html')">
-            <p>Code</p>
+    <div id="wrapper">
+        <div class="banner">
+            <div class="bannertext">
+                <h1>About Me</h1>
+            </div>
         </div>
 
-        <div id="contact" class="square" onmouseover="hover('contact');" onmouseout="offhover('contact');" onclick="(window.location.href='')">
-            <p>Contact</p>
+        <div class="containerBanner">
+            <div id="code" class="square" onmouseover="hover('code');" onmouseout="offhover('code');" onclick="(window.location.href='root.html')">
+                <p>Code</p>
+            </div>
+
+            <div id="contact" class="square" onmouseover="hover('contact');" onmouseout="offhover('contact');" onclick="(window.location.href='')">
+                <p>Contact</p>
+            </div>
+
+            <div id="about" class="square" onmouseover="hover('about');" onmouseout="offhover('about');"
+                onclick="(window.location.href='aboutme.html');">
+                <p>About</p>
+            </div>
         </div>
 
-        <div id="about" class="square" onmouseover="hover('about');" onmouseout="offhover('about');" onclick="(window.location.href='aboutme.html');">
-            <p>About</p>
-        </div>
-    </div>
+        <div class="containerText">
+            <div class="blockLeft">
+                <h2>About me...</h2>
+                <p>
+                    Hello! My name is Benjamin Trang (he/him) and I am a aspiring fullstack software engineer. I am currently a senior at James
+                    Madison
+                    University and will be completing my Bachelors in Computer Information Systems in the winter. I am one of two first generation
+                    children of two Cantonese immigrants. I built my first computer at 13 years old and never looked back, I then fell in love with
+                    programming my first year in college, I learned some simple python and that was that. Im hoping to eventually help build a better
+                    world using my code in this growing age of technology.
+                </p>
+            </div>
 
-    <div class="containerText">
-        <div id="blockLeft">
-            <h2>About me...</h2>
+            <div class="blockRight">
+                <img id="aboutimg" src="assets/hike.jpg" alt="hiking photo">
+            </div>
+        </div>
+
+        <div class="containerText2">
+            <div class="blockLeft">
+                <img id="USN" src="assets/usn.jpg" alt="LAN photo">
+            </div>
+            <div class="blockRight">
+                <h2>Esports...</h2>
+                <p>
+                    After completing my associates degree and completing my transfer, I took a two year hiatus. I wanted to pursue a
+                    personal passion of mine, which was to play video games for money! As my family loves to remind me, I was born with the
+                    "competitive gene". From Counter Strike, Call of Duty, and Halo I grew up always around first person shooters. During my
+                    first couple years in college I got noticed in the Tom Clancy's Rainbow Six: Siege community and a year later went
+                    professional. I got to play online in Challenger and Professional leagues, as well as two LAN events in Dreamhack Austin 2018
+                    and the United States Nationals in Las Vegas. As much as I loved the experience, It killed any social aspects of my life
+                    between practicing 6 days a week and constant travel, and I never had any free time for loved ones.
+                    Toward the end of 2019, I decided to retire to finish college at JMU and spend more time with my friends and family.
+                </p>
+            </div>
+        </div>
+
+        <div class="containerText">
+            <div class="blockLeft">
+                <h2>Other Hobbies...</h2>
+                <p>
+                    I have many interests and hobbies that keep me sane. I love cooking, art, building keyboards, and music. I grew up in my
+                    families restaurant and grew up around food. Typically in Asian cultures food is a sign of love and I enjoy cooking for
+                    my loved ones. Another one of my hobbies (or a money sink) is building keyboards. A few of my best friends got me into
+                    building them and now typing with a regular "keeb" is like using a plastic fork. Lastly, I really enjoy listening to music
+                    some of my favorite artists are Kendrick Lamar, Paramore, and Joji. My partner and I love going to concerts and she is the
+                    one that got me into them. Hopefully some of these resonate with you and feel free to reach out to me if you wanna chat about
+                    these topics!
+                </p>
+            </div>
+            <div class="blockRight">
+                <img id="art" src="assets/art.jpg" alt="art photo">
+            </div>
+        </div>
+
+        <div class="finalpara">
+            <h2>The Purpose...</h2>
             <p>
-                Hello! My name is Benjamin Trang (he/him) and I am a aspiring fullstack software engineer. I am currently a senior at James Madison
-                University and will be completing my Bachelors in Computer Information Systems in the winter. I am one of two first generation
-                children of two Cantonese immigrants. I built my first computer at 13 years old and never looked back, I then fell in love with
-                programming my first year in college, I learned some simple python and that was that. Im hoping to eventually help build a better
-                world using my code in this growing age of technology.
+                I created this website to get myself out there into the tech world. As I have stated before I think that technology is the best way
+                to make a positive impact on our planet and society. I want my code to be able to make a positive impact on the the world and hopefully
+                work at a place that shares the same values as myself.
             </p>
         </div>
 
-        <div id="blockRight">
-            <img id="aboutimg" src="assets/benface.jpg" alt="headshot">
-        </div>
+        <h3 id="ty">Thanks for reading</h3>
+
+        <footer>
+            <script type="text/javascript">
+                footer();
+            </script>
+        </footer>
     </div>
-
-    <div class="containerText2">
-        <div id="blockleft">
-            <img id="USN" src="assets/usn.jpg" alt="LAN photo">
-        </div>
-        <div id="blockRight">
-            <h2>Esports...</h2>
-            <p>
-                After completing my associates degree and completing my transfer, I took a two year hiatus. I wanted to pursue a
-                personal passion of mine, which was to play video games for money! As my family loves to remind me, I was born with the
-                "competitive gene". From Counter Strike, Call of Duty, and Halo I grew up always around first person shooters. During my
-                first couple years in college I got noticed in the Tom Clancy's Rainbow Six: Siege community and a year later went
-                professional. I got to play online in Challenger and Professional leagues, as well as two LAN events in Dreamhack Austin 2018
-                and the United States Nationals in Las Vegas. As much as I loved the experience, It killed any social aspects of my life
-                between practicing 6 days a week and constant travel, and I never had any free time for loved ones.
-                Toward the end of 2019, I decided to retire to finish college at JMU and spend more time with my friends and family.
-            </p>
-        </div>
-    </div>
-
-    <footer>
-        <script type="text/javascript">
-
-            var update = new Date(document.lastModified)
-            var modMonth = update.getMonth() + 1
-            var modDate = update.getDate()
-            var modYear = update.getFullYear()
-            document.write("Trang - Last Updated: " + modMonth + "/" + modDate + "/" + modYear);
-        </script>
-    </footer>
 </body>
 
 </html>

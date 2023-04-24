@@ -9,7 +9,6 @@ html,
 body {
   font-size: 14pt;
   height: 100%;
-  margin: 0;
   line-height: 1.8;
   background-color: #282C34;
   color: white;
@@ -26,7 +25,7 @@ footer {
 /* This css is solely for the banner and its nav banner*/
 /* Set the font size of the h1 element to be responsive using viewport units */
 h1 {
-  font-size: 10vw;
+  font-size: 10em;
   font-family: 'Bebas Neue', cursive;
 }
 
@@ -41,6 +40,11 @@ h2 {
 h3 {
   font-family: 'Bebas Neue', cursive;
   color: gold;
+}
+
+#wrapper {
+  margin-left:auto;
+  margin-right:auto;
 }
 
 /* Set the width and height of elements with the IDs 'code', 'about', and 'contact' to be responsive using percentages and viewport height units*/
@@ -125,7 +129,14 @@ h3 {
 
 .containerText3 {
   margin: 10vh 20% 0 20%;
-  height: 50vh;
+  height: auto;
+  text-align: center;
+  line-height: 1;
+}
+
+.containerText4 {
+  margin: 10vh 20% 0 20%;
+  height: auto;
   text-align: center;
   line-height: 1;
 }
@@ -146,7 +157,7 @@ h3 {
   text-align: center;
 }
 
-#skillcontainer {
+#headalign {
   text-align: center;
 }
 
@@ -175,6 +186,20 @@ h3 {
   float: right;
   margin-right: 50px;
   margin-top: 125px;
+}
+
+#github {
+  width: 200px;
+  height: 200px;
+  margin: 10% 0 20% 100%;
+  float: inline-start;
+}
+
+#linkedin {
+  width: 200px;
+  height: 200px;
+  margin: 10% 100% 20% 0;
+  float: inline-end;
 }
 
 /* This code defines the styling for a slideshow container that displays images */
