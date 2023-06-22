@@ -5,10 +5,18 @@
   font-display: swap;
 }
 
+@media (max-width: 768px) {
+  body {
+    font-size: 80%; /* Decrease the font size to fit smaller screens */
+  }
+}
+
 html,
 body {
   font-size: 14pt;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
   line-height: 1.8;
   background-color: #282C34;
   margin: 0;
