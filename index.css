@@ -83,7 +83,7 @@ h3 {
 /* Set the text alignment and position of elements with the class 'bannertext' to be centered and slightly offset from the top */
 .bannertext {
   text-align: center;
-  position: relative;
+  position: absolute;
   top: 5%;
   left: 50%;
   height: 300px;
