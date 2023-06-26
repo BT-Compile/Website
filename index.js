@@ -16,7 +16,6 @@ function footer() {
   document.write("Benjamin Trang &#169; " + modMonth + "/" + modDate + "/" + modYear);
 }
 
-
 /* below is all js for the image slider*/
 var slideIndex = 1;
 showSlides(slideIndex);
